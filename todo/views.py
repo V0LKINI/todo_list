@@ -32,6 +32,7 @@ def loginuser(request):
 		else:
 			login(request, user)
 			return redirect('currenttodos')
+
 def logoutuser(request):
 	if request.method == 'POST':
 		logout(request)
